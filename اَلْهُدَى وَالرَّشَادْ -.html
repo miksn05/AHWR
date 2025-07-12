@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/dell/Desktop/dou.html#cellules -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Al Hudaa War Rachad - Organisation de jeunes Mourides engagés au service de Cheikh Ahmadou Bamba">
+<title>اَلْهُدَى وَالرَّشَادْ - AL HUDAA WAR RACHAD</title>
+<style>
+  :root {
+    --primary-color: #003366;
+    --secondary-color: #004d99;
+    --text-color: #003366;
+    --bg-color: #f8faff;
+    --white: #ffffff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* Barre de menu verticale */
+  nav {
+    background-color: var(--primary-color);
+    width: 220px;
+    min-width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  nav a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  nav a:hover, nav a.active {
+    background-color: var(--white);
+    color: var(--primary-color);
+  }
+
+  /* Conteneur contenu */
+  .container {
+    margin-left: 220px;
+    padding: 30px 40px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: var(--white);
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+  }
+  
+  p.intro {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 6px;
+    margin-top: 40px;
+  }
+  
+  a.social {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  a.social:hover {
+    text-decoration: underline;
+  }
+  
+  .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon-location {
+    fill: currentColor;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      width: 0;
+      overflow: hidden;
+      transition: width 0.3s;
+      z-index: 100;
+    }
+    nav.active {
+      width: 220px;
+    }
+    .container {
+      margin-left: 0;
+      padding: 20px;
+    }
+    .menu-toggle {
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 101;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+</style>
+<link rel="preload" as="image" href="file:///C:/Users/dell/Desktop/assets/images/logo-al-hudaa.webp"><link rel="preload" as="image" href="file:///C:/Users/dell/Desktop/assets/images/logo-al-hudaa.jpg"></head>
+<body>
+
+<button class="menu-toggle" aria-label="Ouvrir le menu" onclick="document.querySelector(&#39;nav&#39;).classList.toggle(&#39;active&#39;)">☰</button>
+
+<nav>
+  <ul>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#historique" onclick="showSection(&#39;historique&#39;);return false;" class="active">Al hudda war rachad</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#objectif" onclick="showSection(&#39;objectif&#39;);return false;">OBJECTIFS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#valeur" onclick="showSection(&#39;valeur&#39;);return false;">VALEURS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#adhesion" onclick="showSection(&#39;adhesion&#39;);return false;">MODALITES D'ADHESION</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#postes" onclick="showSection(&#39;postes&#39;);return false;">POSTES</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#fonctionnement" onclick="showSection(&#39;fonctionnement&#39;);return false;">FONCTIONNEMENT</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#cellules" onclick="showSection(&#39;cellules&#39;);return false;">CELLULES</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#commissions" onclick="showSection(&#39;commissions&#39;);return false;">COMMISSIONS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#bureau" onclick="showSection(&#39;bureau&#39;);return false;">BUREAU EXECUTIS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#evenements" onclick="showSection(&#39;evenements&#39;);return false;">EVENEMENTS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#projets" onclick="showSection(&#39;projets&#39;);return false;">PROJETS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#jeuwrigns" onclick="showSection(&#39;jeuwrigns&#39;);return false;">JEUWRIGNS ACTUELS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#kourel" onclick="showSection(&#39;kourel&#39;);return false;">KOURELS</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#reseaux" onclick="showSection(&#39;reseaux&#39;);return false;">RESEAUX SOCIAUX</a></li>
+    <li><a href="file:///C:/Users/dell/Desktop/dou.html#adress" onclick="showSection(&#39;adress&#39;);return false;">ADRESSE CONTACTS</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="header-content">
+       
+    <h1>هلاً وسهلاً في اَلْهُدَى وَالرَّشَادْ</h1>
+  </div>
+
+  <p class="intro">
+Bismillah, Barkeep Cheikhoul Khaadim !<br>
+
+Soyez les bienvenus sur le portail de اَلْهُدَى وَالرَّشَادْ, un espace de foi, de fraternité et d’engagement mouride.
+Ici, chaque mot, chaque action, chaque pas vise à plaire à Boroom Touba.
+
+Suivez avec nous le sentier de la droiture et du bon cheminement, tel que tracé par Cheikh Ahmadou Bamba.
+ <br>   Au service de Cheikh Ahmadou Bamba Mbacké!<br> "Bugnu fatter lignufi dadjaler teh moyy dioub dong. Kone nak na laxassay yi geuneu deugeur teh pasteef yi <br>geuneu niaw gnu andeu ligueyal borom Touba mignu amut ludul moom." <br>
+
+ 
+
+
+<br> Serigne Mountakha Mbacke Bachiir YAllah nafi Yagu Teh geuneu werr 
+  </p>
+
+ <section id="historique" style="display: block;">
+    <h2>Historique</h2>
+ <font size="4">    <p>
+      <b>AL HUDAA WAR RACHAAD</b> est un Daara composé de jeunes Mourides engagés, déterminés et entièrement dévoués au service du vénéré Cheikh Ahmadou Bamba Mbacké. Fondé en 2020 au sein de l’école David Diop Mendes, à Sicap Mbao, ce Dahira tire son nom du très respecté Khalife Général des Mourides, Serigne Cheikh Mouhamadou Mountakha Mbacké (RDA).<br><br>
+      Le nom, structuré en deux parties reliées par la conjonction arabe « wa » (qui signifie « et »), associe deux dimensions essentielles :<br>
+     </p><li>
+ « <b>
+ Al Hudaa </b>
+ », qui désigne la droiture,</li>
+
+      
+<li>
+ «<b>Ar-Rachaad </b>», le chemin qui y mène.</li>
+<br><br>
+      <b><center>Puisse Allah nous accorder la force et la constance pour accomplir cette noble mission avec sincérité<br> et dignité, dans le respect de l’héritage spirituel de Cheikhoul Khadim.</center></b>
+    <p></p>
+  </font></section><font size="4">
+
+  <section id="objectif" style="display:none;">
+    <h2>Objectifs</h2>
+    <p>
+      L’organisation <b>AL HUDAA WAR RACHAAD</b> a pour mission de forger la formation spirituelle et intellectuelle de ses membres, en vue d’atteindre la droiture et de favoriser l’ascension spirituelle de chacun. Elle s’appuie pour cela sur la maîtrise des écrits de Cheikh Ahmadou Bamba Mbacké et des autres érudits, tout en plaçant au cœur de son engagement l’adoption de bons comportements et d’un caractère exemplaire, fidèles à l’éthique du Mouridisme.
+    </p>
+  </section>
+
+  <section id="valeur" style="display:none;">
+    <h2>Valeur</h2>
+    <ul>
+      <li>L’organisation adhère pleinement aux principes de l’islam, tels qu’interprétés selon la doctrine du Cheikh.</li>
+      <li>Toute entorse à ces principes pourra entraîner des mesures appropriées, définies par un comité disciplinaire.</li>
+      <li>Ces mesures seront prises avec discernement, en tenant compte de la nature et de la gravité du manquement.</li>
+      <li>Le comité disciplinaire, en collaboration avec la commission culturelle, veille à la bonne compréhension des principes <br>fondamentaux ainsi qu’aux conséquences éventuelles en cas de non-respect.</li>
+    </ul>
+  </section>
+
+  <section id="adhesion" style="display:none;">
+    <h2>Modalités d'adhésion</h2>
+     <ul>
+      <li> Toute personne souhaitant adhérer à l’organisation devra remplir et signer une fiche d’engagement  <br>accompagnée d’une somme symbolique de 150fr.  </li>
+       <li>Cette fiche d’engagement comportera toutes les informations nécessaires du futur membre.</li>
+       <li>Après adhésion, le membre a l’obligation d’acheter une carte membre pour qu’il/elle puisse être identifié(e). </li>
+    </ul>
+  </section>
+
+  <section id="postes" style="display:none;">
+    <h2>Postes</h2>
+    <p>On distingue deux postes majeurs dans cette organisation :</p>
+    <ul>
+      <li>Le poste de directeur communément appelé « Dieuwrigne »</li>
+      <li>Le poste de responsables moraux</li>
+    </ul>
+    <p>Pour le poste de directeur il en existe deux ; un pour les hommes et une pour les femmes.</p>
+  </section>
+
+  <section id="fonctionnement" style="display:none;">
+    <h2>Fonctionnement</h2>
+    <p>
+      Le Dieuwrigne est le responsable opérationnel de l’organisation. Il est nommé par les responsables moraux, sous conditions strictes d’admissibilité (ancienneté, âge, connaissances religieuses, etc.). Il supervise les activités, nomme les responsables des commissions, veille au bon fonctionnement et au respect du règlement intérieur, et préside les réunions exécutives. Certaines décisions nécessitent l’avis du bureau ou du comité disciplinaire.<br><br>
+      Les responsables moraux, nommés sans limitation de mandat, accompagnent la gestion de l’organisation. Ils nomment le Dieuwrigne, fixent les orientations spirituelles, siègent dans les organes décisionnels, et assurent le suivi et le respect du règlement aux côtés du Dieuwrigne.
+    </p>
+  </section>
+
+  <section id="cellules" style="display:none;">
+    <h2>Cellules</h2>
+    <p>On distingue deux cellules dans cette organisation :</p>
+    <ul>
+      <li>Le comité disciplinaire</li>
+      <li>Le secrétariat général</li>
+    </ul>
+    <p>
+      Concernant la dernière (secrétariat), elle abritera deux responsables un pour les hommes et une pour les femmes.<br>
+      Le comité disciplinaire est l’organe chargé de faire respecter le règlement intérieur. Il est composé du Dieuwrigne, des responsables moraux et du responsable de la commission suivi-évaluation. Il examine les manquements des membres ou commissions, applique des avertissements ou sanctions proportionnées, tout en garantissant le droit à la défense.<br><br>
+      Le secrétariat général est l’organe administratif de l’organisation, dirigé par un secrétaire général nommé par le Dieuwrigne. Il coordonne les commissions, gère les documents officiels, veille à la conformité des activités, organise les réunions et joue un rôle de modérateur.
+    </p>
+  </section>
+
+  <section id="commissions" style="display:none;">
+    <h2>Commissions</h2>
+    <p>L’organisation est aménagée en 6 grandes commissions que sont :</p>
+    <ul>
+      <li>La commission culturelle</li>
+      <li>La commission finance</li>
+      <li>La commission organisation</li>
+      <li>La commission communication</li>
+      <li>La commission cuisine</li>
+      <li>La Commission suivi-évaluation</li>
+    </ul>
+    <p>
+      Chaque commission est administrée par deux responsables, un pour les hommes et une pour les femmes.<br>
+      Les commissions assurent le fonctionnement quotidien de l’organisation. Elles reçoivent un budget annuel et rendent compte de leur gestion à la commission suivi-évaluation, via des feuilles de route validées par le bureau exécutif.<br><br>
+      <strong>Rôles clés :</strong><br>
+      Culturelle : Formation religieuse, causeries, séminaires, supervision des kourels.<br>
+      Finance : Budgets, répartition des fonds, gestion financière.<br>
+      Organisation : Événements, logistique, propreté, sonorisation.<br>
+      Communication : Information, réseaux sociaux, diffusion de contenus.<br>
+      Cuisine : Collations et repas lors des activités.<br>
+      Suivi-Évaluation : Contrôle budgétaire, évaluation des activités, bilans, membre du comité disciplinaire.
+    </p>
+  </section>
+
+  <section id="bureau" style="display:none;">
+    <h2>Bureau executif</h2>
+    <p>
+      Le bureau exécutif regroupe les Dieuwrignes, responsables moraux, secrétaires généraux et responsables de commissions. Chaque membre a un remplaçant en cas d’absence.<br><br>
+      Deux types de réunions sont prévues :<br>
+      </p><li>Réunion du bureau exécutif : chaque dernier dimanche du mois (en ligne ou en présentiel).</li>
+      <li>Réunion générale : chaque trimestre, obligatoirement en présentiel. Les dates sont fixées par le bureau.</li><br>
+      <strong>Fonctionnement:</strong><br>
+      <li type="square">Bureau exécutif :</li>
+      Prend les décisions importantes sur les finances, les événements et les projets.<br>
+      Les décisions sont prises à l’unanimité ou par vote en cas de désaccord.<br>
+      <li type="square">Réunions :<br>
+      Le secrétaire général rappelle les réunions du bureau une semaine et trois jours avant.</li>
+
+      La commission communication informe les membres des réunions générales une semaine à l’avance.<br>
+      L’ordre du jour est fixé par le Dieuwrigne, selon les demandes des commissions et cellules, et doit être respecté.<br>
+      Le secrétaire général rédige un compte-rendu (présences, décisions, actions, sommes récoltées), publié et archivé <br> par la commission communication.
+    <p></p>
+  </section>
+
+  <section id="evenements" style="display:none;">
+    <h2>Evènements</h2>
+    <p>
+      L’organisation compte 2 grands événements que sont :<br>
+       </p><li>Le GRAND MAGAL DE TOUBA </li>
+       <li>Le ZIAR auprès du Khalif Général des mourides qui se tiendra chaque deux ans. </li>
+    <p></p>
+  </section>
+
+  <section id="projets" style="display:none;">
+    <h2>Projets</h2>
+    <p>
+      L’organisation a la latitude de poser des projets. Toutefois, elle ne peut dépasser un projet par année.
+    </p>
+  </section>
+
+  <section id="jeuwrigns" style="display:none;">
+    <h2>Jeuwrigns actuels</h2>
+    <li>
+Cheikh Amy WADE </li>
+ <li>
+Sokhna Coumba SENE</li>
+
+  </section>
+
+  <section id="kourel" style="display:none;">
+    <h2>Kourels</h2>
+<li>
+Kourel 1   </li>
+ <li>
+  Kourel 2</li>
+  </section>
+
+  <section id="adress" style="display:none;">
+    <h2>Adresse-contacts</h2>
+    <p><img src="./اَلْهُدَى وَالرَّشَادْ -_files/684908.png" alt="SIEGE" style="max-width: 20px; height: auto; border-radius: 1px; margin-top: 1px;">
+Sicap Mbao derrière le CEM Diamaguene
+<br> Contact: 78 715 60 96/ 77 507 41 71
+ <br>
+
+
+</p>
+  </section>
+
+  
+  <section id="adress" style="display:none;">
+    <h2>Adresse-contacts</h2>
+    <p>
+      <span class="icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" class="icon-location" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+        </svg>
+        Sicap Mbao derrière le CEM Diamaguene
+      </span>
+      <br>Contact: 78 715 60 96 / 77 507 41 71
+    </p>
+  </section>
+
+  <section id="reseaux" style="display:none;">
+    <h2>Réseaux sociaux</h2>
+    <p>Abonnez-vous à nos réseaux sociaux :</p>
+    <ul>
+      <li>
+        <a class="social" href="https://t.me/AHWR2020" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.87 4.326-2.96-.924c-.658-.203-.659-.658.136-.953l11.57-4.458c.538-.196 1.006.128.832.941z"></path>
+          </svg>
+          Telegram
+        </a>
+      </li>
+      <li>
+        <a class="social" href="https://www.tiktok.com/@al_hudaa_war_rachaad" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path>
+          </svg>
+          TikTok
+        </a>
+      </li>
+      <li>
+        <a class="social" href="https://www.instagram.com/al_hudaa_war_rachaad" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+          </svg>
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </section>
+</font></div><font size="4">
+
+<script>
+  function showSection(id) {
+    // Masquer toutes les sections
+    document.querySelectorAll('section').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    
+    // Afficher la section cible
+    document.getElementById(id).style.display = 'block';
+    
+    // Gestion des classes actives
+    document.querySelectorAll('nav a').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+    });
+    
+    // Scroll vers le haut pour mobile
+    if (window.innerWidth <= 768) {
+      document.querySelector('.container').scrollTo(0, 0);
+      document.querySelector('nav').classList.remove('active');
+    }
+  }
+
+  // Afficher la section historique au chargement
+  window.addEventListener('DOMContentLoaded', () => {
+    showSection('historique');
+    
+    // Préchargement des images critiques
+    const preloadImages = [
+      'assets/images/logo-al-hudaa.webp',
+      'assets/images/logo-al-hudaa.jpg'
+    ];
+    
+    preloadImages.forEach(img => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = img;
+      document.head.appendChild(link);
+    });
+  });
+</script>
+
+
+</font></body></html>
